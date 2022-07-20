@@ -17,9 +17,9 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
     {
-      loader&& <Loader/>
+      loader?  <Loader/> :   <Component {...pageProps} />
     }
-    <Component {...pageProps} />
+  
     </>
   
   )
