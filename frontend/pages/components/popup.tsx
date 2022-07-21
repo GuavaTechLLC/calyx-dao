@@ -1,22 +1,18 @@
-import { useEffect, useState } from "react"
+import { useState } from "react"
 import cookie from "js-cookie"
-import Cookies from "js-cookie";
-import { GetServerSideProps } from "next";
 
 
 const Popup = () => {
-    
-    const [isApproved, setIsApproved] = useState("false")
-     
     const click =async () => {
-        setIsApproved("true")
+        cookie.set("approved", "false" , {expires: 1/24})
+        window.location.reload()
     }
 
     return (
         
             <div className="fixed z-50 bg-white h-screen">
             {
-                (isApproved == "false" ) &&
+                
                 <>
                     <video autoPlay muted loop id="video" className=" translate-y-44 md:translate-y-10 lg:translate-y-0">
                         <source src='/images/video.mp4' type="video/mp4" />

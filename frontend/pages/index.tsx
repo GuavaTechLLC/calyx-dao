@@ -2,28 +2,16 @@ import type { NextPage } from 'next'
 import Navbar from './components/Navbar'
 import Popup from './components/popup'
 import { GetServerSideProps } from "next";
-import { useEffect, useState } from 'react';
-import cookie from "js-cookie"
 
 const Home: NextPage = (props) => {
-  // cookie.set("approved", "false" , {expires: 1/24});
-  // const [isApproved, setIsApproved] = useState("")
-  // useEffect(() => {
-  //   console.log(JSON.stringify(props))
-  //   setIsApproved(JSON.stringify(props))
-  //   console.log(isApproved)
-  //   if( isApproved == `{"token":"false"}`) {
-  //       console.log("nbjsbdkv")
-  //   }
-
-  // }, []);
+ 
   return (
     <div> 
-     {/* {
-      isApproved == `{"token":"false"}` && */}
+    {
+      JSON.stringify(props) == `{"token":""}` && 
       <Popup />
-     {/* }
-      */}
+     }
+     
       <div className='bg-[#364b3a] h-full'>
         <Navbar/>
         <div className='flex flex-row items-center justify-center text-white h-[80vh] pb-44 md:pb-56 md:h-fit  '>
@@ -63,8 +51,8 @@ const Home: NextPage = (props) => {
 
 export default Home
 
-// export const getServerSideProps :GetServerSideProps = async (context) => {
+export const getServerSideProps :GetServerSideProps = async (context) => {
   
-//   console.log(context.req.cookies.approved)
-//   return { props :{token: context.req.cookies.approved || ""} }
-// }
+  console.log(context.req.cookies.approved )
+  return { props :{token: context.req.cookies.approved || ""} }
+}
