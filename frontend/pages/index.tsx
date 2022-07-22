@@ -26,7 +26,7 @@ const Home: NextPage = (props) => {
           <img src='/images/image.jpg' alt='hemp' className='absolute z-[10] mt-12 md:mt-0 mx-24 md:mx-48 md:translate-y-12 md:translate-x-40 w-[250px] md:w-[310px] '  />
         </div>
         <div className='w-full flex flex-row items-end justify-end  '>
-          <div className='text-[13px] md:text-2xl font-codec absolute w-16 md:w-32 text-center md:px-1 mr-[120px]  md:mr-[330px] translate-y-[129px] md:translate-y-[340px]'>
+          <div className='text-[13px] md:text-2xl font-codec absolute w-16 md:w-32 text-center md:px-1 mr-[165px]  md:mr-[330px] translate-y-[170px] md:translate-y-[340px]'>
               Lorem ipsum dolor sit amet.
           </div>
         </div>
