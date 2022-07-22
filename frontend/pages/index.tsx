@@ -35,7 +35,9 @@ const Home: NextPage = (props) => {
           <div className='basis-2/4 '>
             <img src='/images/aboutPhoto.jpg' alt='about Photo' className='w-[450px]'  />
           </div>
-          
+          <div className='absolute'>
+          <img src='/images/about-text.png' alt='about Photo' className='w-3/5'  />
+          </div>
           <div className='basis-3/4 '>
             <img src='/images/honeycomb.png' alt='about Photo' className='w-[690px] md:mx-16 -translate-y-[80px] md:-translate-y-[90px]'  />
           </div>
