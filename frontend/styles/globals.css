@@ -2,6 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@layer base {
+  @font-face{
+    font-family: 'Ahsing';
+    src: url('/fonts/Ahsing-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+  }
+  @font-face{
+    font-family: 'CodecPro';
+    src: url('/fonts/CodecPro-UltraBlack.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+  }
+}
+
 html,
 body {
   padding: 0;
