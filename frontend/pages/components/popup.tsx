@@ -10,17 +10,17 @@ const Popup = () => {
 
     return (
         
-            <div className="fixed z-50 bg-white h-screen">
+            <div className="fixed z-50 bg-white h-screen w-full">
             {
                 
                 <>
-                    <video autoPlay muted loop id="video" className=" translate-y-44 md:translate-y-10 lg:translate-y-0">
+                    <video autoPlay muted loop id="video" className="w-full h-full object-cover lg:translate-y-0 ">
                         <source src='/images/video.mp4' type="video/mp4" />
                     </video>
-                    <div className="flex flex-col items-center justify-start text-center ">
+                    <div className="flex flex-col items-center justify-center text-center w-full h-full absolute top-0">
                         <div className=" w-3/5 ">
 
-                            <div className=" text-white -translate-y-[20vh] md:-translate-y-[60vh] lg:-translate-y-[85vh] ">
+                            <div className=" text-white">
                                 <div className="mt-10 pb-16 flex flex-col items-center ">
                                     <img src="/images/logo.png" alt="logo" className="self-center w-4 sm:w-8 md:w-14" />
                                     <h3 className="font-ahsing text-sm md:text-2xl">
