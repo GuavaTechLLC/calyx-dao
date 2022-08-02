@@ -3,7 +3,7 @@ import Navbar from './components/Navbar'
 
 const Whitepaper: NextPage = () => {
   return (
-    <div className='bg-[#364b3a] h-screen'>
+    <div className='bg-gradient-to-r from-[#263529] via-[#415a45] to-[#668f6d] h-screen'>
         <Navbar/>
         <div className='flex items-center justify-center h-3/4'>
             <div className="text-center self-center pt-10 animate-bounce">

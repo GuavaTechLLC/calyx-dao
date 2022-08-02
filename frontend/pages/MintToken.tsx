@@ -3,7 +3,7 @@ import Navbar from './components/Navbar'
 
 const MintToken: NextPage = () => {
   return (
-    <div className='bg-[#364b3a] h-screen'>
+    <div className='bg-gradient-to-r from-[#263529] via-[#415a45] to-[#668f6d] h-screen'>
         <Navbar/>
             <div className='flex items-center justify-center h-3/4'> 
                 <div className='p-10 bg-gray-50 rounded-lg h-4/5 md:w-2/5 w-3/5'>
