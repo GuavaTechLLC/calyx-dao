@@ -2,13 +2,20 @@ import type { NextPage } from 'next'
 import Navbar from './components/Navbar'
 import Popup from './components/popup'
 import { GetServerSideProps } from "next";
+import { useEffect, useState } from 'react'
 
 const Home: NextPage = (props) => {
- const ShowPopUp = JSON.stringify(props)
+
+  const [showPopUp, setShowPopUp] = useState('')
+  useEffect(() => {
+    let storageValue = window.sessionStorage.getItem('AcceptedPopup') == 'true' ? 'true' : ''
+    setShowPopUp(storageValue)
+  }, []);
+
   return (
     <div> 
     {
-      ShowPopUp == `{"token":""}` ? 
+      showPopUp == '' ? 
       <Popup />
      
      :
@@ -52,9 +59,3 @@ const Home: NextPage = (props) => {
 }
 
 export default Home
-
-export const getServerSideProps :GetServerSideProps = async (context) => {
-  
-  console.log(context.req.cookies.approved )
-  return { props :{token: context.req.cookies.approved || ""} }
-}

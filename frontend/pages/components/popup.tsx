@@ -4,7 +4,8 @@ import cookie from "js-cookie"
 
 const Popup = () => {
     const click =async () => {
-        cookie.set("approved", "false" , {expires: 5})
+        // cookie.set("approved", "false" , {expires: 5})
+        window.sessionStorage.setItem('AcceptedPopup','true');
         window.location.reload()
     }
 
