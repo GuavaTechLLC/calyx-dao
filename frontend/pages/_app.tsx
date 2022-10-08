@@ -3,6 +3,7 @@ import type { AppProps } from 'next/app'
 import Router from 'next/router'
 import { useState } from 'react'
 import Loader from './components/loader'
+import Layout from './components/Layout'
 
 function MyApp({ Component, pageProps }: AppProps) {
 
@@ -17,7 +18,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
     {
-      loader?  <Loader/> :   <Component {...pageProps} />
+      loader?  <Loader/> :  <Layout><Component {...pageProps} /></Layout> 
     }
   
     </>

@@ -25,8 +25,6 @@ const MintToken: NextPage = () => {
                     </div>
                 </div>
             </div>
-        
-        
     </div>
   )
 }

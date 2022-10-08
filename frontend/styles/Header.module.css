@@ -1,0 +1,19 @@
+.heroWrapper {
+  position: relative;
+  width: 100vw;
+  height: 70vh;
+}
+
+
+.imageWrapper {
+  z-index: -1;
+  opacity: 0.3
+}
+
+
+.heroContent {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
