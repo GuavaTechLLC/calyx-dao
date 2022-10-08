@@ -14,7 +14,7 @@ const Footer = () => {
             </div>
             <p className="font-thin">© All Rights Reserved.</p>
        </div>
-       <div className="flex flex-row p-10 ml-auto">
+       <div className="flex flex-row flex-wrap p-10 ml-auto">
             <div className="p-5 cursor-pointer">
                 <AiFillTwitterCircle />
             </div>

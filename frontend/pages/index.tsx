@@ -56,11 +56,11 @@ const Home: NextPage = (props) => {
       </div>
         
        
-      <div className="bg-gray-300 rounded w-full h-80">
+      <div className="bg-gray-300 rounded w-full md:h-80">
         <p className="pt-20 pl-20 font-bold text-lg">
           Our Mission
         </p>
-        <p className="pt-10 pl-20 pr-20 font-light">
+        <p className="pt-10 pl-20 pr-20 font-light pb-20">
           Lorem ipsum dolor sit amet. Non esse ratione et magnam vero eum perferendis doloribus aut harum molestiae. Ut consequuntur ratione et tempora facere non sunt numquam quo modi rerum ut delectus quasi. In exercitationem earum et molestias quasi qui voluptate cupiditate non quas quasi sed voluptatibus molestiae et ducimus consectetur.
         </p>
       </div>
